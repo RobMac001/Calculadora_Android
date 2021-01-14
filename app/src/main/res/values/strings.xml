@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="label_division"><![CDATA[/]]></string>
+    <string name="label_borrar"><![CDATA[<=]]></string>
+</resources>
