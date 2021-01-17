@@ -8,6 +8,7 @@ import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private Button Button8;
     private Button Button9;
     private Button ButtonC;
+    private Button ButtonR;
     private Button ButtonSuma;
     private Button ButtonResta;
     private Button ButtonMultiplicacion;
@@ -152,6 +154,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 TextoResultado.setText("");
                 accionesAdionales(R.id.boton_cc);
+            }
+        });
+
+        ButtonR = findViewById(R.id.boton_r);
+        ButtonR.setOnClickListener( new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                //TextoResultado.setText("");
+                Toast.makeText(MainActivity.this, "Hecho por Robert", Toast.LENGTH_LONG).show();
+                accionesAdionales(R.id.boton_r);
             }
         });
 
